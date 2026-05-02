@@ -1,7 +1,7 @@
 #  Roadmap.sh Practice Repository
 
 This repository contains my personal solutions and exercises from [roadmap.sh](https://roadmap.sh), a platform that provides structured learning paths for developers.
-
+Project url: https://github.com/collins05-munene/roadmap.sh/
 ##  Purpose
 
 The goal of this repository is to:
