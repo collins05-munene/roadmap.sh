@@ -1,9 +1,16 @@
 [
     {
         "id": "5e29eeae-2805-471b-8c22-0b82c0c6e51c",
-        "description": "Learn Django",
-        "status": "Todo",
+        "description": "Learn HTML",
+        "status": "Done",
         "createdAt": "2026-05-01 20:57:11.534227",
-        "updatedAt": "2026-05-01 20:57:11.534227"
+        "updatedAt": "2026-05-02T10:02:45.294806"
+    },
+    {
+        "id": "7424d330-1dc1-4770-8a87-bc133307a735",
+        "description": "Learn Cybersecurity",
+        "status": "Todo",
+        "createdAt": "2026-05-02 09:59:53.185190",
+        "updatedAt": "2026-05-02 09:59:53.185190"
     }
 ]
