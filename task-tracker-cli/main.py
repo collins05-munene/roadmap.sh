@@ -74,8 +74,29 @@ class Task:
             json.dump(data, file, indent=4)
 
         return f'Item {task_id} successfully deleted.'
+    
+    def list(self, filter=None):
+        with open(filename, "r")as file:
+            tasks = json.load(file)
+
+        data = []
+        for task in tasks:
+            if filter == 'Done':
+                if task['status'] == 'Done':
+                    data.append(task)
+            elif filter == 'Todo':
+                if task['status'] == 'Todo':
+                    data.append(task)
+            elif filter == 'In-progress':
+                if task['status'] == 'In-progress':
+                    data.append(task)
+            else:
+                data.append(task)
+
         
+        return data
+
 
 task = Task()
 
-print(task.delete("23cee6ee-6352-4c83-b8c9-126f6e97f3af"))
+print(task.list())
