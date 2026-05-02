@@ -56,8 +56,26 @@ class Task:
             json.dump(tasks, file, indent=4)
 
         return f"Tasks {task_id} updated successfully"
+
+    def delete(self, task_id):
+        try:
+            with open(filename, "r") as file:
+                tasks = json.load(file)
+        except(FileNotFoundError, json.JSONDecodeError):
+            return "No tasks"
+        
+        data = []
+
+        for task in tasks:
+            if task["id"] != task_id:
+                data.append(task)
+
+        with open(filename, "w")as file:
+            json.dump(data, file, indent=4)
+
+        return f'Item {task_id} successfully deleted.'
         
 
 task = Task()
 
-print(task.update("5e29eeae-2805-471b-8c22-0b82c0c6e51c", None, "Done"))
+print(task.delete("23cee6ee-6352-4c83-b8c9-126f6e97f3af"))
