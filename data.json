@@ -8,9 +8,16 @@
     },
     {
         "id": "e7f92d33-6183-49b4-8889-7ed8a5979832",
-        "description": "Learn HTML",
-        "status": "Done",
+        "description": "Learn Python",
+        "status": "Todo",
         "createdAt": "2026-05-02 10:22:13.965149",
         "updatedAt": "2026-05-02 10:22:13.965149"
+    },
+    {
+        "id": "e2eddb1a-fe4c-4168-8584-02d064670789",
+        "description": "Learn Databases",
+        "status": "In-progress",
+        "createdAt": "2026-05-02 10:52:54.908840",
+        "updatedAt": "2026-05-02 10:52:54.908840"
     }
 ]
